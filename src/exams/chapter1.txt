@@ -8,7 +8,7 @@ Review Questions
    E.  Public
    F.  1980_s
 
-A y B
+A,B,E 2/3
 
 2. What is the output of the following program?
    1: public class WaterBottle {
@@ -27,7 +27,27 @@ A y B
    E.  Empty = false, Brand =
    F.  Empty = null, Brand = null
 
-    D
+    D 1/1
+
+===========================================================================
+          width                     minimum                         maximum
+signed    8 bit                        -128                            +127
+signed   16 bit                     -32 768                         +32 767
+signed   32 bit              -2 147 483 648                  +2 147 483 647
+signed   64 bit  -9 223 372 036 854 775 808      +9 223 372 036 854 775 807
+unsigned  8 bit                           0                            +255
+unsigned 16 bit                           0                         +65 535
+unsigned 32 bit                           0                  +4 294 967 295
+unsigned 64 bit                           0     +18 446 744 073 709 551 615
+
+The order is: byte 8 bits, short 16 bits, int 32 bits, long 64 bits.
+
+        width                     minimum                         maximum
+byte:   8 bit                        -128                            +127
+short: 16 bit                     -32 768                         +32 767
+int:   32 bit              -2 147 483 648                  +2 147 483 647
+long:  64 bit  -9 223 372 036 854 775 808      +9 223 372 036 854 775 807
+===========================================================================
 
 3. Which of the following are true? (Choose all that apply)
    4: short numPets = 5;
@@ -45,7 +65,7 @@ A y B
    F. Line 9 generates a compiler error.
    G. The code compiles as is.
 
-   D,E
+   B,D,E 2/3
 
 4. Given the following class, which of the following is true? (Choose all that apply)
     1: public class Snake {
@@ -66,7 +86,7 @@ A y B
    D.   If String result = "done"; is inserted on line 9, the code will compile.
    E.   None of the above changes will make the code compile.
 
-    A,B
+    A,B 2/2
 
 5. Given the following classes, which of the following can independently replace INSERT
    IMPORTS HERE to make the code compile? (Choose all that apply)
@@ -86,7 +106,7 @@ A y B
    E.   import aquarium.jellies.Jelly.*;
    F.   None of these can make the code compile.
 
-    A,C,D
+    A,C,D 2/3
 
 6. Given the following classes, what is the maximum number of imports that can be removed
    and have the code still compile?
@@ -109,7 +129,7 @@ A y B
    E.   4
    F.   Does not compile.
 
-    Solución: 4
+    E 1/1
 
 7. Given the following classes, which of the following snippets can be inserted in place of
    INSERT IMPORTS HERE and have the code compile? (Choose all that apply)
@@ -139,7 +159,7 @@ A y B
        import aquarium.jellies.Water;
     F. None of these imports can make the code compile.
 
-    A,B,C,D no
+    A,B,C 3/4
     
     F
 
@@ -159,7 +179,7 @@ A y B
     F.   java BirdDisplay.class "Blue Jay" Sparrow
     G. Does not compile.
 
-    B
+    B 1/1
 
 9.  Which of the following legally fill in the blank so you can run the main() method from the
     command line? (Choose all that apply)
@@ -174,7 +194,7 @@ A y B
     F.   String names
     G. None of the above.
 
-    A,C,D,E
+    A,C,D,E 4/4
 
 10. Which of the following are legal entry point methods that can be run from the command
     line? (Choose all that apply)
@@ -187,7 +207,7 @@ A y B
     F.   public static main(String[] args)
     G. None of the above.
 
-    E
+    E 1/1
 
 11. Which of the following are true? (Choose all that apply)
 
@@ -199,7 +219,7 @@ A y B
     F.  An instance variable of type String defaults to 0.0.
     G. None of the above.
 
-    C,D
+    C,D 2/2
 
 12. Which of the following are true? (Choose all that apply)
 
@@ -211,7 +231,7 @@ A y B
     F.  A local variable of type float defaults to 0.0.
     G. None of the above.
 
-    G
+    G 1/1
 
 13. Which of the following are true? (Choose all that apply)
 
@@ -223,7 +243,7 @@ A y B
     F.  An instance variable of type int defaults to null.
     G. None of the above.
 
-    A,D
+    A,D 2/2
 
 14. Given the following class in the file /my/directory/named/A/Bird.java:
 
@@ -241,7 +261,7 @@ A y B
     F.  package A;
     G. Does not compile.
 
-    D
+    D 1/1
 
 15. Which of the following lines of code compile? (Choose all that apply)
 
@@ -252,7 +272,7 @@ A y B
     E.  double d4 = 1_234.0;
     F.  None of the above.
 
-    A,B,E
+    A,E 2/3
 
 16. Given the following class, which of the following lines of code can replace INSERT CODE
     HERE to make the code compile? (Choose all that apply)
@@ -271,7 +291,7 @@ A y B
     F.  int amount = 1_2_;
     G. None of the above.
 
-    B,C,D
+    B,C,D 3/3
 
 17. Which of the following are true? (Choose all that apply)
 
@@ -288,7 +308,7 @@ A y B
     F.  main is a reference to an object.
     G. None of the above.
 
-    A,E
+    A,E 2/2
 
 18. Which represent the order in which the following statements can be assembled into a pro-
     gram that will compile successfully? (Choose all that apply)
@@ -305,7 +325,7 @@ A y B
     F. A, C
     G. A, B
 
-    C
+    C,D,E 1/3
 
 19. Suppose we have a class named Rabbit. Which of the following statements are true?
     (Choose all that apply)
@@ -336,7 +356,7 @@ A y B
     F.   The Rabbit object from line 4 is first eligible for garbage collection immediately
          following line 12.
 
-    A,   
+    B,D (0)
 
 20. What is true about the following code? (Choose all that apply)
 
@@ -358,7 +378,7 @@ A y B
     F.   Garbage collection is guaranteed not to run.
     G. The code does not compile.
 
-    B,E
+    B,E 2/2
 
 21. What does the following code output?
 
@@ -379,7 +399,7 @@ A y B
     E.   Compilation fails on line 7.
     F.   Compilation fails on line 8.
 
-    B
+    A (0)
 
 22. Which of the following are true statements? (Choose all that apply)
 
@@ -390,7 +410,7 @@ A y B
     E.   Java is an object-oriented language.
     F.   Java is a functional programming language.
 
-    E
+    B,E 1/2
 
 23. Which of the following are true? (Choose all that apply)
 
@@ -401,4 +421,4 @@ A y B
     E. Java takes the name of the .bytecode file as a parameter.
     F. Java takes the name of the .class file as a parameter.
 
-    C,F
+    C,D 1/2
